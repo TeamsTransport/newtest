@@ -32,7 +32,7 @@ function App() {
               <li>
                 <a>Parent</a>
                 <ul className="p-2">
- to="/submenu1">Submenu 1</Link></li>
+                  <li><Link to="/submenu1">Submenu 1</Link></li>
                   <li><Link to="/submenu2">Submenu 2</Link></li>
                 </ul>
               </li>
