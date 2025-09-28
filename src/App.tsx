@@ -15,9 +15,9 @@ function App() {
             </label>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><Link to="/">Item 1</Link></li>
-              <li className="relative">
+              <li className="dropdown dropdown-hover dropdown-right">
                 <a className="font-semibold">Parent</a>
-                <ul className="absolute left-0 top-full mt-1 p-2 shadow bg-base-100 rounded-box w-52 z-10">
+                <ul className="dropdown-content menu menu-sm shadow bg-base-100 rounded-box w-52 z-20">
                   <li><Link to="/submenu1">Submenu 1</Link></li>
                   <li><Link to="/submenu2">Submenu 2</Link></li>
                 </ul>
