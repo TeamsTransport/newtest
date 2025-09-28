@@ -45,18 +45,17 @@ function App() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li><Link to="/">Item 1</Link></li>
-            <li className="dropdown dropdown-hover">
-              <label tabIndex={0} className="btn btn-ghost">Parent</label>
-              <ul
-                tabIndex={0}
-                className="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
+            <li className="relative group">
+              <Link to="#" className="btn btn-ghost">Parent</Link>
+              <ul className="absolute hidden group-hover:flex flex-col bg-base-100 shadow rounded-box mt-2 p-2 z-10">
                 <li><Link to="/submenu1">Submenu 1</Link></li>
                 <li><Link to="/submenu2">Submenu 2</Link></li>
               </ul>
             </li>
+                tabIndex={0}
+                className="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
             <li><Link to="/about">Item 3</Link></li>
-          </ul>
         </div>
 
         <div className="navbar-end">
